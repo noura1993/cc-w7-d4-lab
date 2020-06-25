@@ -3,10 +3,6 @@
     <h2>{{beer.name}}</h2>
     <img class="beer-img" :src="beer.image_url" alt="beer image">
     <h3>Ingredients:</h3>
-        <!-- <ul v-for="ingredient in getIngredients(beer)">
-            <li>{{ingredient}}</li>
-        </ul>
-    <button class="button" type="button" v-on:click="addToFavourite(beer.name)">Add To Fav</button> -->
     <div v-for="ingredient in getIngredients(beer)">
         {{ingredient}}
     </div>
